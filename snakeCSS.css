@@ -1,0 +1,14 @@
+@CHARSET "ISO-8859-1";
+table#board {
+	background-color: black;
+}
+
+table#board td {
+	width: 64px;
+	height: 64px;
+	border: 1px solid white;
+}
+
+table#controls {
+	text-align: center;
+}

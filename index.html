@@ -1,1 +1,63 @@
-"Hello World" 
+<!DOCTYPE html>
+<html>
+	<body onload="drawTable()">
+		<head>
+			<link rel="stylesheet" href="snakeCSS.css">
+			<title>snake.js</title>
+		</head>
+	
+		<center>
+			<table id="controls">
+				<tr>
+					<td>
+						Rows
+						<br>
+						<input type="button" value="-" id="rowsm" onclick="tableSize(this)">
+						<span id="rows"></span>
+						<input type="button" value="+" id="rowsp" onclick="tableSize(this)">
+					</td>
+					<td>
+						<br>
+					</td>
+					<td>
+						Columns
+						<br>
+						<input type="button" value="-" id="colsm" onclick="tableSize(this)">
+						<span id="cols"></span>
+						<input type="button" value="+" id="colsp" onclick="tableSize(this)">
+					</td>
+					<td>
+						<br>
+					</td>
+					<td>
+						Speed
+						<br>
+						<input type="button" value="-" id="slow" onclick="changeSpeed(this)">
+						<span id="speed"></span>
+						<input type="button" value="+" id="fast" onclick="changeSpeed(this)">
+					</td>
+					<td>
+						<br>
+					</td>
+					<td>
+						Difficulty
+						<br>
+						<input type="button" value="-" id="more" onclick="changeDifficulty(this)">
+						<span id="difficulty"></span>
+						<input type="button" value="+" id="less" onclick="changeDifficulty(this)">
+					</td>
+				</tr>
+			</table>
+			<br>
+			<input onclick="startstop()" type="button" value="START" id="btn" />
+			<br>
+			<hr>
+			<table id="board"></table>
+			<br><br>
+			<span id="log"></span>
+		</center>
+	
+		<!-- <script type="text/javascript" src="js/drawTable.js" ></script> -->
+		<script type="text/javascript" src="js/game.js"></script>
+	</body>
+</html>
